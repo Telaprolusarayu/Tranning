@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<button onclick="sarayu()">click Me</button>
+	<p id="sarayu">How r u?</p>
+<script >
+	function sarayu() 
+	{
+		var a;
+		if(confirm("Tell me ur answer?"))
+		{
+		   a="yes,i am waiting for you baby";
+		}
+		else
+		{
+			a="No dear, Am always solo";
+		}
+		document.getElementById('sarayu').innerHTML=a;
+
+		}    
+		</script>
+	</body>
+</html>
