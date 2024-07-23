@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<input id="num" type="number" value="">
+	<button onclick="luckfun()">submit</button>
+</body>
+	<script>
+	
+function luckfun()
+{
+	var a = Math.floor(Math.random() * (10 - 1) + 1);
+	var b=document.getElementById('num').value;
+	 b=Number(b);
+
+   	if(a==b){
+		alert("you are sarayu");
+	}
+	else
+	{
+		alert("better sarayu nxt time");
+	}
+}
+
+	</script>
+</html>
