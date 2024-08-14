@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+     
+        
+    
+        /* Container styling */
+        .container {
+            position: relative;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        /* Logout icon styling */
+        .logout-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <h1>Welcome Sarayu</h1>
+    <h2 id="timer"></h2>
+
+    <table border="1">
+        <tr>
+            <th>eid</th>
+            <th>ename</th>
+            <th>eaddress</th>
+            <th>eage</th>
+            <th>edob</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>Sarayu</td>
+            <td>AP</td>
+            <td>15</td>
+            <td>2004-01-01</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>Dolly</td>
+            <td>Delhi</td>
+            <td>16</td>
+            <td>2004-11-03</td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>mini</td>
+            <td>AP</td>
+            <td>17</td>
+            <td>2004-07-06</td>
+        </tr>
+        <tr>
+            <td>04</td>
+            <td>sunny</td>
+            <td>hyd</td>
+            <td>18</td>
+            <td>2004-02-04</td>
+        </tr>
+         <tr>
+            <td>05</td>
+            <td>siri</td>
+            <td>hyd</td>
+            <td>19</td>
+            <td>2004-08-07</td>
+        </tr>
+        <!-- Add table rows as needed -->
+    </table>
+
+    <script>
+        // Timer script
+        let time = 60;
+        const timerElement = document.getElementById('timer');
+        timerElement.innerText = `Time Remaining: ${time} seconds`;
+
+        const countdown = setInterval(() => {
+            time--;
+            timerElement.innerText = `Time Remaining: ${time} seconds`;
+            if (time <= 0) {
+                clearInterval(countdown);
+                timerElement.innerText = "Time's up!";
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>
